@@ -36,7 +36,7 @@ const Work = () => {
     <div
       id="work"
       className="max-w-[1040px] m-auto md:pl-20 p-4 py-16"
-      data-aos="zoom-in-left"
+      data-aos="zoom-in-down"
       data-aos-duration="1300"
       data-aos-delay="400"
     >
