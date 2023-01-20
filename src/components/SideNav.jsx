@@ -40,7 +40,7 @@ const Sidenav = () => {
           duration={500}
           size={30}
           className="absolute top-4 right-4 z-[99] md:hidden hover:fill-green-400 hover:scale-110 ease-in duration-200"
-          // data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1300"
+          data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1300"
         />
       )}
       {
@@ -55,7 +55,6 @@ const Sidenav = () => {
                 className="w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200"
               >
                 <link.icon size={20} />
-                <span className="pl-4">{link.label}</span>
               </a>
             ))}
           </div>

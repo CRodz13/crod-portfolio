@@ -8,15 +8,14 @@ import jsonImg from "../assets/projects/json.png";
 import spaceInvaderImg from "../assets/projects/spaceInvader.png";
 import taskManagerImg from "../assets/projects/taskManager.png";
 import chrisBlogImg from "../assets/projects/chrisBlog.png";
-import shoppingAppImg from "../assets/projects/shoppingApp.png";
 import doomImg from "../assets/projects/doom.png";
 import eyeControlImg from "../assets/projects/eyeControl.png";
 
 const Projects = () => {
   return (
-    <div id="projects" className="max-w-[1040px] m-auto md:pl-20 p-4 py-16">
+    <div id="projects" className="w-full min-h-screen m-auto p-4 py-16 text-white bg-gradient-to-b from-gray-800 to-black">
       <h1
-        className="text-4xl font-bold text-center text-[#001b5e]"
+        className="text-4xl font-bold text-center underline"
         data-aos="zoom-in-up"
         data-aos-duration="1300"
       >
@@ -31,7 +30,7 @@ const Projects = () => {
         A Small fraction of projects I have completed.
       </p>
       <div
-        className="grid sm:grid-cols-2 gap-12"
+        className="grid sm:grid-cols-3 gap-12 md:pl-40 md:pr-40"
         data-aos="zoom-in-down"
         data-aos-duration="1300"
         data-aos-delay="400"
@@ -76,11 +75,7 @@ const Projects = () => {
           title="Django with Bootstrap Blog"
           lang="Django/Bootstrap"
         />
-        <ProjectItem
-          img={shoppingAppImg}
-          title="Mobile app"
-          lang="React Native"
-        />
+
         <ProjectItem img={doomImg} title="Python Doom Game" lang="Python" />
         <ProjectItem
           img={eyeControlImg}

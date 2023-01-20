@@ -119,36 +119,34 @@ const About = () => {
           data-aos-duration="1300"
           data-aos-delay="400"
         >
-          <p className="text-4xl font-bold inline border-b-4 border-gray-500">
-            About
-          </p>
+          <p className="text-4xl font-bold text-center underline">About</p>
         </div>
 
         <p
-          className="text-xl mt-5 text-center"
+          className="md:text-xl mt-2 text-center sm:leading-tight"
           data-aos="fade-right"
           data-aos-duration="1300"
           data-aos-delay="400"
         >
-          As a full-stack web developer with a broad range of skills, I am
-          capable of handling projects that span many different languages and
-          frameworks. My current focus is on using Python, Django, React, and
-          Tailwind, but I have experience with a variety of other tools and
-          technologies as well. In addition to writing code, I also have a
-          strong background in hardware, including computer building and bash
-          scripting. I am also well-versed in data analysis and database
-          administration, which allows me to work on complex projects that
-          involve large amounts of data. With my extensive experience and
-          knowledge, I am confident in my ability to deliver high-quality,
-          robust, and scalable web applications. Whether working on vanilla
-          JavaScript projects or more complex projects that involve multiple
-          languages and frameworks, I am able to provide efficient and effective
-          solutions that meet the needs of my clients. I am always eager to take
-          on new challenges and am committed to staying up-to-date with the
-          latest technologies and trends in web development. With my strong
+          As a seasoned full-stack web developer with a diverse set of skills, I
+          possess the ability to undertake projects utilizing various languages
+          and frameworks. My current expertise centers on utilizing Python,
+          Django, React, and Tailwind, yet I possess experience with a plethora
+          of other tools and technologies. In addition to programming, I have a
+          strong foundation in hardware, including computer assembly and bash
+          scripting. Furthermore, I am well-versed in data analysis and database
+          administration, enabling me to work on complex projects that involve
+          large amounts of data. With my extensive experience and knowledge, I
+          am confident in my ability to deliver high-quality, robust, and
+          scalable web applications that meet the needs of my clients. Whether
+          working on vanilla JavaScript projects or more complex projects that
+          involve multiple languages and frameworks, I am able to provide
+          efficient and effective solutions. I am always eager to take on new
+          challenges and am dedicated to staying current with the latest
+          technologies and trends in web development. With my strong
           problem-solving skills, attention to detail, and ability to work well
-          under pressure, I am confident that I would be a valuable asset to any
-          team.
+          under pressure, I am convinced that I would be a valuable addition to
+          any team.
         </p>
 
         <br />
@@ -159,14 +157,17 @@ const About = () => {
               data-aos-duration="1300"
               data-aos-delay="400"
             >
-              <p className="text-2xl py-6 text-center">
+              <p className="text-2xl py-6 text-center underline">
                 These are some of the technologies I work with
               </p>
             </div>
 
-            <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-8 px-12 sm:px-0" data-aos="zoom-in-up"
+            <div
+              className="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-8 px-12 sm:px-0"
+              data-aos="zoom-in-up"
               data-aos-duration="1300"
-              data-aos-delay="400">
+              data-aos-delay="400"
+            >
               {techs.map(({ id, src, title, style }) => (
                 <div
                   key={id}
