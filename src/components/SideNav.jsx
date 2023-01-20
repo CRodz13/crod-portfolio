@@ -68,7 +68,7 @@ const Sidenav = () => {
             <a
               key={index}
               href={link.href}
-              className="rounded-full shadow-lg bg-gray-100 hover:bg-green-400 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-100"
+              className="rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-100 transition-none"
             > 
               <link.icon size={20} />
             </a>
