@@ -9,7 +9,6 @@ import { BsArrowUpCircleFill } from 'react-icons/bs'
 
 
 function App() {
-  const [count, setCount] = useState(0)
   const [showButton, setShowButton] = useState(false)
 
   useEffect(() => {

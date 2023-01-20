@@ -14,12 +14,12 @@ import eyeControlImg from '../assets/projects/eyeControl.png'
 
 const Projects = () => {
   return (
-    <div id='projects' className='w-full h-full m-auto md:pl-20 p-4 py-16' data-aos="fade-left" data-aos-duration="1300" data-aos-delay="400">
+    <div id='projects' className='max-w-[1040px] m-auto md:pl-20 p-4 py-16' data-aos="fade-left" data-aos-duration="1300" data-aos-delay="400">
         <h1 className='text-4xl font-bold text-center text-[#001b5e]'>Projects</h1>
         <p className='text-center py-8'>
             A Small fraction of projects I have completed.  
         </p>
-        <div className='grid sm:grid-cols-3 gap-6' data-aos="zoom-in-down" data-aos-duration="1300" data-aos-delay="400">
+        <div className='grid sm:grid-cols-2 gap-12' data-aos="zoom-in-down" data-aos-duration="1300" data-aos-delay="400">
             <ProjectItem img={apiNetflixImg} title='Netflix Clone API App' lang="React Js"/>
             <ProjectItem img={djacketsImg} title='Djackets Ecommerce App' lang="Django"/>
             <ProjectItem img={netflixCloneImg} title='Netflix Clone App' lang="React Js"/>
