@@ -29,7 +29,7 @@ const data = [
 ]
 const Work = () => {
   return (
-    <div id='work' className='max-w-[1040px] h-screen m-auto md:pl-20 p-4 py-16' data-aos="fade-left" data-aos-duration="1300" data-aos-delay="400" >
+    <div id='work' className='w-full h-full m-auto md:pl-20 p-4 py-16' data-aos="fade-left" data-aos-duration="1300" data-aos-delay="400" >
         <h1 className='text-4xl font-bold text-center text-[#001b5e]' data-aos="fade-down" data-aos-duration="1300" data-aos-delay="400">Work</h1>
         {data.map((item, idx) => (
             <WorkItem key={idx} year={item.year} title={item.title} duration={item.duration} details={item.details}/>
