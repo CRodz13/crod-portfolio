@@ -6,6 +6,8 @@ import Projects from './components/Projects'
 import Sidenav from './components/Sidenav'
 import Work from './components/Work'
 import { BsArrowUpCircleFill } from 'react-icons/bs'
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 
 function App() {
@@ -24,6 +26,12 @@ function App() {
   const handleClick = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' })
   }
+
+  useEffect(() => {
+    AOS.init({
+      once: true,
+    });
+  });
   
   return (
     <div>

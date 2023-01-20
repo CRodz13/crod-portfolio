@@ -40,7 +40,7 @@ const Sidenav = () => {
           duration={500}
           size={30}
           className="absolute top-4 right-4 z-[99] md:hidden hover:fill-green-400 hover:scale-110 ease-in duration-200"
-          data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1300"
+          // data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1300"
         />
       )}
       {
