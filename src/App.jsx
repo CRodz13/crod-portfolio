@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import About from './components/About'
+import Tools from './components/Tools'
 import Contact from './components/Contact'
 import Main from './components/Main'
 import Projects from './components/Projects'
@@ -38,11 +39,12 @@ function App() {
       <Sidenav />
       <Main />
       <About />
+      <Tools />
       <Work />
       <Projects />
       <Contact />
       {showButton && (
-        <button className="fixed bottom-0 right-0 p-3 rounded-full bg-[#001b5e] hover:bg-green-400 text-white hover:text-[#001b5e] text-3xl" onClick={handleClick}>
+        <button className="fixed bottom-0 right-0 rounded-full bg-[#001b5e] hover:bg-green-400 text-white hover:text-[#001b5e] text-3xl" onClick={handleClick}>
           <BsArrowUpCircleFill />
         </button>
       )}

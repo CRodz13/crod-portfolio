@@ -43,9 +43,9 @@ const Work = () => {
         data-aos-duration="1300"
         data-aos-delay="400"
       >
-        Work
+        Experience
       </h1>
-      <div className="" data-aos="zoom-in-left"
+      <div className="" data-aos="zoom-in-up"
       data-aos-duration="1300"
       data-aos-delay="400">
         {data.map((item, idx) => (

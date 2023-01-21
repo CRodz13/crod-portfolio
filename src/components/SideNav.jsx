@@ -6,7 +6,7 @@ import {
 } from "react-icons/ai";
 import { BsFillPersonLinesFill, BsInfoSquareFill } from "react-icons/bs";
 import { GrProjects } from "react-icons/gr";
-import { FaBars, FaTimes } from "react-icons/fa";
+import { FaBars, FaTimes, FaTools } from "react-icons/fa";
 
 const Sidenav = () => {
   const [nav, setNav] = useState(false);
@@ -17,6 +17,7 @@ const Sidenav = () => {
   const links = [
     { icon: AiOutlineHome, label: "Home", href: "#main" },
     { icon: BsInfoSquareFill, label: "About", href: "#about" },
+    { icon: FaTools, label: "Tools", href: "#tools" },
     { icon: GrProjects, label: "Work", href: "#work" },
     { icon: AiOutlineProject, label: "Projects", href: "#projects" },
     { icon: BsFillPersonLinesFill, label: "Resume", href: "#main" },
