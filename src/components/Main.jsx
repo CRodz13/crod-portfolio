@@ -49,7 +49,7 @@ const Main = () => {
               wrapper="div"
               cursor={true}
               repeat={Infinity}
-              style={{ fontSize: "1em", paddingLeft: "5px", color: "#4ade80" }}
+              style={{ fontSize: "1em", paddingLeft: "5px", color: "white" }}
             />
           </h2>
           <div

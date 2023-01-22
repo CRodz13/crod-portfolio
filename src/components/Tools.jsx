@@ -1,21 +1,24 @@
 import React from "react";
-import html from "../assets/skills/html.png";
-import css from "../assets/skills/css.png";
-import javascript from "../assets/skills/javascript.png";
-import reactImage from "../assets/skills/react.png";
-import nextjs from "../assets/skills/nextjs.png";
-import graphql from "../assets/skills/graphql.png";
-import github from "../assets/skills/github.png";
-import tailwind from "../assets/skills/tailwind.png";
-import aws from "../assets/skills/aws.png";
-import bootstrap from "../assets/skills/bootstrap.png";
-import django from "../assets/skills/django.png";
-import docker from "../assets/skills/docker.png";
-import python from "../assets/skills/python.png";
-import sql from "../assets/skills/sql.png";
-import flask from "../assets/skills/flask.png";
+import html from "../assets/tools/html.png";
+import css from "../assets/tools/css.png";
+import javascript from "../assets/tools/javascript.png";
+import react from "../assets/tools/react.png";
+import nextjs from "../assets/tools/nextjs.png";
+import graphql from "../assets/tools/graphql.png";
+import github from "../assets/tools/github.png";
+import tailwind from "../assets/tools/tailwind.png";
+import aws from "../assets/tools/aws.png";
+import bootstrap from "../assets/tools/bootstrap.png";
+import django from "../assets/tools/django.png";
+import docker from "../assets/tools/docker.png";
+import python from "../assets/tools/python.png";
+import sql from "../assets/tools/sql.png";
+import flask from "../assets/tools/flask.png";
+import linux from "../assets/tools/linux.png";
+import linode from "../assets/tools/linode.png";
+import dotnet from "../assets/tools/dotnet.png";
 
-const About = () => {
+const Tools = () => {
   const techs = [
     {
       id: 1,
@@ -37,7 +40,7 @@ const About = () => {
     },
     {
       id: 4,
-      src: reactImage,
+      src: react,
       title: "React",
       style: "shadow-blue-600",
     },
@@ -69,7 +72,7 @@ const About = () => {
       id: 16,
       src: flask,
       title: "Flask",
-      style: "shadow-blue-400",
+      style: "shadow-gray-400",
     },
     {
       id: 10,
@@ -107,6 +110,24 @@ const About = () => {
       title: "SQL",
       style: "shadow-blue-400",
     },
+    {
+      id: 16,
+      src: linux,
+      title: "Linux",
+      style: "shadow-yellow-400",
+    },
+    {
+      id: 17,
+      src: linode,
+      title: "Linode",
+      style: "shadow-blue-400",
+    },
+    {
+      id: 18,
+      src: dotnet,
+      title: "Dotnet",
+      style: "shadow-purple-400",
+    },
   ];
   return (
     <div
@@ -120,7 +141,7 @@ const About = () => {
           data-aos-duration="1300"
           data-aos-delay="400"
         >
-          <p className="text-4xl font-bold text-center underline">Skills</p>
+          <p className="text-4xl font-bold text-center underline">tools</p>
         </div>
 
 
@@ -149,7 +170,7 @@ const About = () => {
                   className={`shadow-md hover:scale-105 duration-500 py-2 rounded-lg ${style}`}
                 >
                   <img src={src} alt="" className="w-20 mx-auto" />
-                  <p className="mt-4">{title}</p>
+                  <p className="mt-4 ">{title}</p>
                 </div>
               ))}
             </div>
@@ -160,4 +181,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default Tools;

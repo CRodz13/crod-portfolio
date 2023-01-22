@@ -2,7 +2,7 @@ import React from "react";
 import headshot from "../assets/headshot.jpg";
 import henry from "../assets/henry.jpg";
 
-const About2 = () => {
+const About = () => {
   return (
     <div className="bg-white py-16 min-h-screen">
       <div className="container m-auto px-6 text-gray-600 md:px-12 xl:px-6">
@@ -11,7 +11,6 @@ const About2 = () => {
             className="md:5/12 lg:w-5/12 sm:w-1/2"
             data-aos="fade-down"
             data-aos-duration="1300"
-            data-aos-delay="400"
           >
             <img src={henry} alt="image" loading="lazy" className="mx-auto w-1/2 h-64 rounded-full object-cover md:w-4/5 md:h-full" />
           </div>
@@ -58,4 +57,4 @@ const About2 = () => {
   );
 };
 
-export default About2;
+export default About;
