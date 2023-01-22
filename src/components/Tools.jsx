@@ -141,7 +141,7 @@ const Tools = () => {
           data-aos-duration="1300"
           data-aos-delay="400"
         >
-          <p className="text-4xl font-bold text-center underline">tools</p>
+          <p className="text-4xl font-bold text-center underline">Tools</p>
         </div>
 
 
