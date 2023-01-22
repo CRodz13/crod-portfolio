@@ -5,3 +5,31 @@
 * {
   scroll-behavior: smooth;
 }
+
+::-webkit-scrollbar {
+  width: .9rem;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(220 80% 20% / 1);
+  border-radius: 100vw;
+  margin-block: .2em;
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(210 90% 20% / 1);
+  border: .25em solid hsl(200 700% 20% / 1);
+  border-radius: 100vw;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(210 90% 70% / 1);
+}
+
+@media (max-width: 768px) {
+  /* Styles for mobile devices */
+  body::-webkit-scrollbar {
+    width: 0 !important;
+    background: transparent;
+  }
+}
