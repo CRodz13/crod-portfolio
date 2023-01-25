@@ -7,27 +7,27 @@
 }
 
 ::-webkit-scrollbar {
-  width: .9rem;
+  width: .8rem;
 }
 
 ::-webkit-scrollbar-track {
-  background: hsl(220 80% 20% / 1);
+  background: rgb(125, 126, 134);
   border-radius: 100vw;
-  margin-block: .2em;
+  margin-block: -0.3em;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: hsl(210 90% 20% / 1);
-  border: .25em solid hsl(200 700% 20% / 1);
+  background: rgb(233, 235, 236);
+  border: .25em solid rgb(50, 50, 56);
   border-radius: 100vw;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: hsl(210 90% 70% / 1);
+  background: rgb(194, 194, 204);
 }
 
 @media (max-width: 768px) {
-  /* Styles for mobile devices */
+  
   body::-webkit-scrollbar {
     width: 0 !important;
     background: transparent;

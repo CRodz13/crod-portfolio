@@ -4,7 +4,7 @@ import Tools from './components/Tools'
 import Contact from './components/Contact'
 import Main from './components/Main'
 import Projects from './components/Projects'
-import Sidenav from './components/Sidenav'
+import SideNav from './components/SideNav'
 import Work from './components/Work'
 import { BsArrowUpCircleFill } from 'react-icons/bs'
 import AOS from "aos";
@@ -36,7 +36,7 @@ function App() {
   
   return (
     <div>
-      <Sidenav />
+      <SideNav />
       <Main />
       <About />
       <Tools />

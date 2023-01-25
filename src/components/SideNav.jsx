@@ -4,7 +4,7 @@ import { BsFillPersonLinesFill, BsInfoSquareFill } from "react-icons/bs";
 import { MdWork } from "react-icons/md";
 import { FaBars, FaTimes, FaTools } from "react-icons/fa";
 
-const Sidenav = () => {
+const SideNav = () => {
   const [nav, setNav] = useState(false);
   const handleNav = () => {
     setNav(!nav);
@@ -43,7 +43,6 @@ const Sidenav = () => {
         />
       )}
       {
-        //This is a Ternary operator
         nav ? (
           <div className="fixed w-full h-screen bg-white/90 flex flex-col justify-center items-center z-20">
             {links.map((link, index) => (
@@ -71,7 +70,7 @@ const Sidenav = () => {
             <a
               key={index}
               href={link.href}
-              className="relative rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 hover:text-white hover:bg-[#001b5e] ease-in duration-100 transition-none"
+              className="relative rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 hover:text-white hover:bg-[#001b5e] ease-in duration-100"
             >
               <link.icon size={20} />
             </a>
@@ -82,4 +81,4 @@ const Sidenav = () => {
   );
 };
 
-export default Sidenav;
+export default SideNav;
