@@ -15,22 +15,19 @@ const projects = [
     id: 1,
     name: "Netflix API",
     image: apiNetflixImg,
-    description:
-      "Web App made using free API with a netflix clone.",
+    description: "Web App made using free API with a netflix clone.",
   },
   {
     id: 2,
     name: "djackets",
     image: djacketsImg,
-    description:
-      "Web App made with Django and Bootstrap.",
+    description: "Web App made with Django and Bootstrap.",
   },
   {
     id: 3,
     name: "Netflixclone",
     image: netflixCloneImg,
-    description:
-      "Regular Netflix react clone.",
+    description: "Regular Netflix react clone.",
   },
   {
     id: 4,
@@ -85,14 +82,18 @@ const projects = [
 
 const Projects = () => {
   return (
-    <div id="projects" className="flex min-h-screen items-center pt-10 pb-10 justify-center bg-gradient-to-b from-gray-800 to-black">
-      <div
-        className="grid grid-cols-2 pr-5 pl-5 gap-5 md:grid-cols-2 lg:grid-cols-3"
-      >
+    <div
+      id="projects"
+      className="flex min-h-screen items-center pt-10 pb-10 justify-center bg-gradient-to-b from-gray-800 to-black"
+    >
+      <div className="grid grid-cols-2 pr-5 pl-5 gap-5 md:grid-cols-2 lg:grid-cols-3">
         {projects.map((project) => (
-          <div className="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow rounded-lg hover:shadow-xl hover:shadow-white" data-aos="zoom-in-up"
-          data-aos-easing="linear"
-          data-aos-duration="1300">
+          <div
+            className="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow rounded-lg hover:shadow-xl hover:shadow-white"
+            data-aos="zoom-in-up"
+            data-aos-easing="linear"
+            data-aos-duration="1300"
+          >
             <div className="h-96 w-72">
               <img
                 className="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125"

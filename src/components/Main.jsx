@@ -11,7 +11,7 @@ import headshotImg from "../assets/headshot.jpg";
 
 const Main = () => {
   return (
-    <div id="main" >
+    <div id="main">
       <img
         className="w-full h-screen object-cover"
         src={headshotImg}

@@ -12,7 +12,12 @@ const About = () => {
             data-aos="fade-down"
             data-aos-duration="1300"
           >
-            <img src={henry} alt="image" loading="lazy" className="mx-auto w-1/2 h-64 rounded-full object-cover md:w-4/5 md:h-full" />
+            <img
+              src={henry}
+              alt="image"
+              loading="lazy"
+              className="mx-auto w-1/2 h-64 rounded-full object-cover md:w-4/5 md:h-full"
+            />
           </div>
           <div className="md:7/12 lg:w-6/12">
             <h2
