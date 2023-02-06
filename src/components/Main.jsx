@@ -69,26 +69,6 @@ const Main = () => {
               />
             </a>
             <a
-              href="https://facebook.com/crodz13"
-              target="_blank"
-              rel="noreferrer noopener"
-            >
-              <FaFacebookF
-                className="cursor-pointer text-[#3b5998] md:hover:scale-[2] ease-in duration-200"
-                size={30}
-              />
-            </a>
-            <a
-              href="https://instagram.com/crodz13"
-              target="_blank"
-              rel="noreferrer noopener"
-            >
-              <FaInstagram
-                className="cursor-pointer text-[#d62976] md:hover:scale-[2] ease-in duration-200"
-                size={30}
-              />
-            </a>
-            <a
               href="https://linkedin.com/in/chris-rodriguez-ba02b6241"
               target="_blank"
               rel="noreferrer noopener"
