@@ -28,7 +28,7 @@ function App() {
   }
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/crod-portfolio">
       <SideBar>
         <Routes>
           <Route path="/" element={<Main />} />
