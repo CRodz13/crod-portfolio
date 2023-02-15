@@ -7,7 +7,6 @@ import Contact from './pages/Contact'
 import Main from './pages/Main'
 import Projects from './pages/Projects'
 import Work from './pages/Work'
-import { BsArrowUpCircleFill } from 'react-icons/bs'
 import 'animate.css';
 
 function App() {
@@ -23,12 +22,8 @@ function App() {
     })
   }, [])
 
-  const handleClick = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' })
-  }
-
   return (
-    <BrowserRouter basename="/crod-portfolio">
+    <BrowserRouter>
       <SideBar>
         <Routes>
           <Route path="/" element={<Main />} />
