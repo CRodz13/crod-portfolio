@@ -2,7 +2,7 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <div className="absolute w-[75%] md:w-[75%] h-full md:pl-[16%] p-4 py-16 overflow-auto animate__animated animate__bounceInDown animate__delay-1s">
+    <div className="absolute w-[85%] sm:ml-[150px] md:w-[75%] h-full p-4 py-16 overflow-auto animate__animated animate__bounceInDown animate__delay-1s">
       <h1 className="py-4 text-4xl font-bold text-center text-[#001b5e]">
         Contact
       </h1>
