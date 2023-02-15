@@ -1,5 +1,5 @@
 import React from "react";
-import WorkItem from "./WorkItem";
+import WorkItem from "../components/WorkItem";
 
 const data = [
   {
@@ -7,7 +7,7 @@ const data = [
     title: "PDQ Signature Systems",
     duration: "1 year",
     details:
-      "An accomplished POS implementation specialist with extensive experience in training, SQL database management, and menu design. Adept at providing support to installation teams during full installations and utilizing technical skills to optimize operational efficiencies. Demonstrated technical aptitude by developing a JSON to CSV converter for an SQL developer, highlighting the ability to proactively improve processes.",
+      "A tenacious POS implementation specialist with extensive experience in training, SQL database management, and menu design. Adept at providing support to installation teams during full installations and utilizing technical skills to optimize operational efficiencies. Demonstrated technical aptitude by developing a JSON to CSV converter for an SQL developer, highlighting the ability to proactively improve processes.",
   },
   {
     year: "2019",
@@ -33,32 +33,21 @@ const data = [
 ];
 const Work = () => {
   return (
-    <div
-      id="work"
-      className="max-w-[1040px] m-auto md:pl-20 p-4 py-16"
-    >
-      <h1
-        className="text-4xl font-bold text-center underline text-[#001b5e] pb-20"
-        data-aos="zoom-in-right"
-        data-aos-duration="1300"
-        data-aos-delay="400"
-      >
+    <div className="absolute h-full bg-gradient-to-b from-gray-800 to-black md:pl-20 p-4 md:py-16 overflow-auto">
+      <h1 className="text-4xl font-bold text-center underline text-sky-400 pb-8 md:pb-20 animate__animated animate__backInDown">
         Experience
       </h1>
-      <div className="" data-aos="zoom-in-up"
-      data-aos-duration="1300"
-      data-aos-delay="400">
-        {data.map((item, idx) => (
-        <WorkItem
-          key={idx}
-          year={item.year}
-          title={item.title}
-          duration={item.duration}
-          details={item.details}
-        />
+      {data.map((item, idx) => (
+        <div className="animate__animated animate__backInUp animate__delay-1s">
+          <WorkItem
+            key={idx}
+            year={item.year}
+            title={item.title}
+            duration={item.duration}
+            details={item.details}
+          />
+        </div>
       ))}
-      </div>
-      
     </div>
   );
 };

@@ -4,13 +4,11 @@ import henry from "../assets/henry.jpg";
 
 const About = () => {
   return (
-    <div className="bg-white py-16 min-h-screen">
+    <div className="absolute md:w-full h-full py-16 bg-gradient-to-b from-gray-800 to-black overflow-auto">
       <div className="container m-auto px-6 text-gray-600 md:px-12 xl:px-6">
         <div className="space-y-6 md:flex md:gap-6 md:space-y-0 lg:items-center lg:gap-12">
           <div
-            className="md:5/12 lg:w-5/12 sm:w-1/2"
-            data-aos="fade-down"
-            data-aos-duration="1300"
+            className="md:5/12 lg:w-5/12 sm:w-1/2 animate__animated animate__bounceInUp animate__delay-1s"
           >
             <img
               src={henry}
@@ -19,20 +17,14 @@ const About = () => {
               className="mx-auto w-1/2 h-64 rounded-full object-cover md:w-4/5 md:h-full"
             />
           </div>
-          <div className="md:7/12 lg:w-6/12">
+          <div className="md:7/12 lg:w-6/12 animate__animated animate__bounceInDown animate__delay-1s">
             <h2
-              className="text-2xl font-bold text-gray-900 md:text-4xl underline"
-              data-aos="fade-right"
-              data-aos-duration="1300"
-              data-aos-delay="400"
+              className="text-2xl font-bold text-sky-400 md:text-4xl underline"
             >
               About
             </h2>
             <p
-              className="mt-6 text-gray-600"
-              data-aos="fade-up"
-              data-aos-duration="1300"
-              data-aos-delay="400"
+              className="text-lg mt-6 text-gray-600"
             >
               As a seasoned full-stack web developer with a diverse set of
               skills, I possess the ability to undertake projects utilizing

@@ -11,29 +11,21 @@ import headshotImg from "../assets/headshot.jpg";
 
 const Main = () => {
   return (
-    <div id="main">
+    <div className="min-h-screen">
       <img
-        className="w-full h-screen object-cover"
+        className="absolute object-cover w-full h-full animate__animated animate__bounceInDown animate__delay-1s"
         src={headshotImg}
         alt=""
-        data-aos="fade-down"
-        data-aos-duration="1300"
       />
-      <div className="w-full h-screen absolute top-0 left-0 bg-white/25">
-        <div className="max-w-[700px] m-auto h-full w-full flex flex-col justify-center lg:items-start items-center">
+      <div className="absolute w-full h-full bg-white/25">
+        <div className="max-w-[700px] m-auto h-full w-full flex flex-col pr-16 justify-center lg:items-start items-center animate__animated animate__fadeInUp animate__delay-1s">
           <h1
-            className="sm:text-5xl text-4xl font-bold shadow-xl text-gray-800 transform"
-            data-aos="fade-up"
-            data-aos-duration="1300"
-            data-aos-delay="400"
+            className="text-3xl md:text-5xl font-bold shadow-xl text-gray-800 transform"
           >
             I'm Chris Rodriguez
           </h1>
           <h2
-            className="flex sm:text-3xl text-2xl shadow-xl pt-4 text-gray-800"
-            data-aos="fade-down"
-            data-aos-duration="1300"
-            data-aos-delay="400"
+            className="flex sm:text-3xl text-2xl shadow-xl pt-4 pr-12 text-gray-800"
           >
             I'm a
             <TypeAnimation
@@ -54,9 +46,6 @@ const Main = () => {
           </h2>
           <div
             className="flex justify-between pt-10 max-w-[200px] w-full"
-            data-aos="fade-right"
-            data-aos-duration="1300"
-            data-aos-delay="400"
           >
             <a
               href="https://twitter.com/crodz13"

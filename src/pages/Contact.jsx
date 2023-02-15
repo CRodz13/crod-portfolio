@@ -2,13 +2,7 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <div
-      id="contact"
-      className="max-w-[1040px] m-auto md:pl-20 p-4 py-16"
-      data-aos="fade-up"
-      data-aos-easing="linear"
-      data-aos-duration="1300"
-    >
+    <div className="absolute w-[75%] md:w-[75%] h-full md:pl-[16%] p-4 py-16 animate__animated animate__bounceInDown animate__delay-1s">
       <h1 className="py-4 text-4xl font-bold text-center text-[#001b5e]">
         Contact
       </h1>
@@ -17,7 +11,7 @@ const Contact = () => {
         method="POST"
         encType="multipart/form-data"
       >
-        <div className="grid md:grid-cols-2 gap-4 w-full py-2">
+        <div className="grid md:grid-cols-2 gap-4 py-2">
           <div className="flex flex-col">
             <label className="uppercase text-sm py-2">Name</label>
             <input
