@@ -131,29 +131,27 @@ const Tools = () => {
   ];
   return (
     <div className="absolute md:w-full h-full bg-gradient-to-b from-gray-800 to-black text-sky-400 overflow-auto">
-      <div className="max-w-screen-lg p-8 mx-auto flex flex-col justify-center animate__animated animate__bounceInDown animate__delay-1s">
-        <div
-          className="pb-4"
-        >
+      <div className="max-w-screen-lg p-8 mx-auto flex flex-col justify-center">
+        <div className="pb-4 animate__animated animate__bounceInDown animate__delay-1s">
           <p className="text-4xl font-bold text-center underline">Tools</p>
         </div>
 
         <br />
         <div className="p-4 flex flex-col justify-center text-white ">
-          <div
-          >
+          <div>
             <p className="pb-6 text-xl md:text-2xl md:py-6 text-center underline">
               These are some of the technologies I work with
             </p>
           </div>
 
-          <div className="grid grid-cols-2 pr-5 pl-5 gap-5 md:grid-cols-2 lg:grid-cols-3">
+          <div className="grid grid-cols-2 pr-5 pl-5 gap-5 md:grid-cols-2 lg:grid-cols-3 animate__animated animate__bounceInUp animate__delay-1s">
             {techs.map(({ id, src, title, style }) => (
-              <div
-                key={id}
-                className={`shadow-md py-2 rounded-lg ${style}`}
-              >
-                <img src={src} alt="" className="w-20 mx-auto hover:scale-[1.5] duration-300" />
+              <div key={id} className={`shadow-md py-2 rounded-lg ${style}`}>
+                <img
+                  src={src}
+                  alt=""
+                  className="w-20 mx-auto hover:scale-[1.5] duration-300"
+                />
                 <p className="my-4 text-center">{title}</p>
               </div>
             ))}

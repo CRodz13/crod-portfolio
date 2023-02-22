@@ -1,54 +1,36 @@
 import React from "react";
-import headshot from "../assets/headshot.jpg";
 import henry from "../assets/henry.jpg";
 
 const About = () => {
   return (
-    <div className="absolute md:w-full h-full py-16 bg-gradient-to-b from-gray-800 to-black overflow-auto">
-      <div className="container m-auto px-6 text-gray-600 md:px-12 xl:px-6">
-        <div className="space-y-6 md:flex md:gap-6 md:space-y-0 lg:items-center lg:gap-12">
-          <div
-            className="md:5/12 lg:w-5/12 sm:w-1/2 animate__animated animate__bounceInUp animate__delay-1s"
-          >
-            <img
-              src={henry}
-              alt="image"
-              loading="lazy"
-              className="mx-auto w-1/2 h-64 rounded-full object-cover md:w-4/5 md:h-full"
-            />
-          </div>
-          <div className="md:7/12 lg:w-6/12 animate__animated animate__bounceInDown animate__delay-1s">
-            <h2
-              className="text-2xl font-bold text-sky-400 md:text-4xl underline"
-            >
-              About
-            </h2>
-            <p
-              className="text-lg mt-6 text-gray-600"
-            >
-              As a seasoned full-stack web developer with a diverse set of
-              skills, I possess the ability to undertake projects utilizing
-              various languages and frameworks. My current expertise centers on
-              utilizing Python, Django, React, and Tailwind, yet I possess
-              experience with a plethora of other tools and technologies. In
-              addition to programming, I have a strong foundation in hardware,
-              including computer assembly and bash scripting. Furthermore, I am
-              well-versed in data analysis and database administration, enabling
-              me to work on complex projects that involve large amounts of data.
-              With my extensive experience and knowledge, I am confident in my
-              ability to deliver high-quality, robust, and scalable web
-              applications that meet the needs of my clients. Whether working on
-              vanilla JavaScript projects or more complex projects that involve
-              multiple languages and frameworks, I am able to provide efficient
-              and effective solutions. I am always eager to take on new
-              challenges and am dedicated to staying current with the latest
-              technologies and trends in web development. With my strong
-              problem-solving skills, attention to detail, and ability to work
-              well under pressure, I am convinced that I would be a valuable
-              addition to any team.
-            </p>
-          </div>
-        </div>
+    <div className="h-full md:p-24 bg-gradient-to-b from-gray-800 to-black overflow-auto">
+      <div className="md:flex flex-col items-center p-4 animate__animated animate__bounceInDown animate__delay-1s">
+        <img
+          src={henry}
+          alt="image"
+          loading="lazy"
+          className="w-3/4 mb-6 ml-9 md:mr-9 rounded-xl md:rounded-full md:w-1/6 md:shadow-lg md:shadow-sky-300"
+        />
+        <h2 className="text-2xl md:text-4xl text-sky-300 text-center underline p-4">
+          About
+        </h2>
+
+        <p className="text-sky-300 sm:text-lg md:text-2xl md:p-8 leading-7 p-4 mb-4 shadow-lg shadow-sky-300 rounded-xl animate__animated animate__bounceInUp animate__delay-1s">
+          As a full-stack web developer with a wide range of skills and
+          expertise in Python, Django, React, and Tailwind, I am able to tackle
+          projects using a variety of languages and frameworks. In addition to
+          programming, I have a solid foundation in hardware, including computer
+          assembly and bash scripting, as well as a deep understanding of data
+          analysis and database administration. I have the experience and
+          knowledge to deliver high-quality, scalable web applications that meet
+          the needs of my clients. Whether it's a vanilla JavaScript project or
+          a complex multi-lingual and multi-framework project, I can provide
+          efficient and effective solutions. I am dedicated to staying
+          up-to-date with the latest trends and technologies in web development
+          and I am always eager to take on new challenges. With strong
+          problem-solving skills, attention to detail, and the ability to work
+          well under pressure, I would be a valuable asset to any team.
+        </p>
       </div>
     </div>
   );

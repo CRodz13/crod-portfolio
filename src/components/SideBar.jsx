@@ -41,18 +41,18 @@ const SideBar = ({ children }) => {
               ({ marginLeft: isOpen ? "5px" : "0px" },
               { display: isOpen ? "none" : "block" })
             }
-            className="mx-auto text-2xl animate__animated animate__lightSpeedInRight"
+            className="mx-auto text-2xl animate__animated animate__bounceInLeft"
           >
-            <BsBoxArrowInRight onClick={toggle} />
+            <BsBoxArrowInRight onClick={toggle} className="hover:scale-[2]" />
           </div>
           <div
             style={
               ({ marginRight: isOpen ? "0px" : "5px" },
               { display: isOpen ? "block" : "none" })
             }
-            className="ml-auto text-2xl"
+            className="ml-auto text-2xl animate__animated animate__bounceInRight"
           >
-            <BsBoxArrowInLeft onClick={toggle} />
+            <BsBoxArrowInLeft onClick={toggle} className="hover:scale-[2]"/>
           </div>
         </div>
             <div className="left-0 transform translate-y-1/4">

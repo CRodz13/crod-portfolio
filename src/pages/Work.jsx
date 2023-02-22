@@ -33,21 +33,23 @@ const data = [
 ];
 const Work = () => {
   return (
-    <div className="absolute h-full bg-gradient-to-b from-gray-800 to-black md:pl-20 p-4 md:py-16 overflow-auto">
-      <h1 className="text-4xl font-bold text-center underline text-sky-400 pb-8 md:pb-20 animate__animated animate__backInDown">
+    <div className="h-full bg-gradient-to-b from-gray-800 to-black md:pl-20 md:p-16 overflow-auto">
+      <h1 className="text-4xl font-bold text-center underline text-sky-300 p-4 md:p-6 animate__animated animate__backInDown">
         Experience
       </h1>
-      {data.map((item, idx) => (
-        <div className="animate__animated animate__backInUp animate__delay-1s">
-          <WorkItem
-            key={idx}
-            year={item.year}
-            title={item.title}
-            duration={item.duration}
-            details={item.details}
-          />
-        </div>
-      ))}
+      <div className="p-8 shadow-lg shadow-sky-300">
+        {data.map((item, idx) => (
+          <div className="md:p-2 animate__animated animate__backInUp animate__delay-1s">
+            <WorkItem
+              key={idx}
+              year={item.year}
+              title={item.title}
+              duration={item.duration}
+              details={item.details}
+            />
+          </div>
+        ))}
+      </div>
     </div>
   );
 };

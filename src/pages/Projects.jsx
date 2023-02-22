@@ -82,16 +82,16 @@ const projects = [
 
 const Projects = () => {
   return (
-    <div className="absolute md:w-full h-full bg-gradient-to-b from-gray-800 to-black overflow-auto">
-      <div className="max-w-screen-lg p-8 mx-auto animate__animated animate__bounceInDown animate__delay-1s">
-        <div className="pb-4">
-          <p className="text-4xl font-bold text-center underline text-white">
+    <div className="h-full md:w-screen bg-gradient-to-b from-gray-800 to-black overflow-auto">
+      <div className="max-w-screen-lg p-8 mx-auto">
+        <div className="pb-8 animate__animated animate__bounceInDown animate__delay-1s">
+          <p className="text-4xl font-bold text-center underline text-sky-300">
             Portfolio
           </p>
         </div>
-        <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3 animate__animated animate__bounceInUp animate__delay-2s">
           {projects.map((project) => (
-            <div className="group relative cursor-pointer rounded-lg hover:shadow-xl hover:shadow-white">
+            <div className="group relative cursor-pointer hover:shadow-xl hover:shadow-white">
               <div className="object-cover transform duration-500 group-hover:rotate-3 group-hover:scale-90">
                 <img
                   className="h-96 object-cover"

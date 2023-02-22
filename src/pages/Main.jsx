@@ -17,15 +17,15 @@ const Main = () => {
         src={headshotImg}
         alt=""
       />
-      <div className="absolute w-full h-full bg-white/25">
-        <div className="max-w-[700px] m-auto h-full w-full flex flex-col pr-16 justify-center lg:items-start items-center animate__animated animate__fadeInUp animate__delay-1s">
+      <div className="absolute w-full h-full bg-white/25 flex justify-center items-center">
+        <div className="mr-14 animate__animated animate__fadeInUp animate__delay-2s">
           <h1
-            className="text-3xl md:text-5xl font-bold shadow-xl text-gray-800 transform"
+            className="text-3xl md:text-5xl font-bold text-gray-800"
           >
             I'm Chris Rodriguez
           </h1>
           <h2
-            className="flex sm:text-3xl text-2xl shadow-xl pt-4 pr-12 text-gray-800"
+            className="flex text-3xl md:text-5xl pt-4 pr-12 text-gray-800"
           >
             I'm a
             <TypeAnimation
@@ -41,7 +41,7 @@ const Main = () => {
               wrapper="div"
               cursor={true}
               repeat={Infinity}
-              style={{ fontSize: "1em", paddingLeft: "5px", color: "white" }}
+              style={{ fontSize: "1em", paddingLeft: "5px", color: "limegreen" }}
             />
           </h2>
           <div
