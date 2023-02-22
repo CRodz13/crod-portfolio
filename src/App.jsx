@@ -1,26 +1,26 @@
-import { useEffect, useState } from 'react'
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import SideBar from './components/SideBar'
-import About from './pages/About'
-import Tools from './pages/Tools'
-import Contact from './pages/Contact'
-import Main from './pages/Main'
-import Projects from './pages/Projects'
-import Work from './pages/Work'
-import 'animate.css';
+import { useEffect, useState } from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import SideBar from "./components/SideBar";
+import About from "./pages/About";
+import Tools from "./pages/Tools";
+import Contact from "./pages/Contact";
+import Main from "./pages/Main";
+import Projects from "./pages/Projects";
+import Work from "./pages/Work";
+import "animate.css";
 
 function App() {
-  const [showButton, setShowButton] = useState(false)
+  const [showButton, setShowButton] = useState(false);
 
   useEffect(() => {
-    window.addEventListener('scroll', () => {
+    window.addEventListener("scroll", () => {
       if (window.pageYOffset > 300) {
-        setShowButton(true)
+        setShowButton(true);
       } else {
-        setShowButton(false)
+        setShowButton(false);
       }
-    })
-  }, [])
+    });
+  }, []);
 
   return (
     <BrowserRouter>
@@ -35,7 +35,7 @@ function App() {
         </Routes>
       </SideBar>
     </BrowserRouter>
-  )
+  );
 }
 
-export default App
+export default App;

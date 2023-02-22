@@ -1,12 +1,6 @@
 import React, { useEffect } from "react";
 import { TypeAnimation } from "react-type-animation";
-import {
-  FaTwitter,
-  FaFacebookF,
-  FaInstagram,
-  FaLinkedinIn,
-  FaGithub,
-} from "react-icons/fa";
+import { FaTwitter, FaLinkedinIn, FaGithub } from "react-icons/fa";
 import headshotImg from "../assets/headshot.jpg";
 
 const Main = () => {
@@ -19,14 +13,10 @@ const Main = () => {
       />
       <div className="absolute w-full h-full bg-white/25 flex justify-center items-center">
         <div className="mr-14 animate__animated animate__fadeInUp animate__delay-2s">
-          <h1
-            className="text-3xl md:text-5xl font-bold text-gray-800"
-          >
+          <h1 className="text-3xl md:text-5xl font-bold text-gray-800">
             I'm Chris Rodriguez
           </h1>
-          <h2
-            className="flex text-3xl md:text-5xl pt-4 pr-12 text-gray-800"
-          >
+          <h2 className="flex text-3xl md:text-5xl pt-4 pr-12 text-gray-800">
             I'm a
             <TypeAnimation
               sequence={[
@@ -41,12 +31,14 @@ const Main = () => {
               wrapper="div"
               cursor={true}
               repeat={Infinity}
-              style={{ fontSize: "1em", paddingLeft: "5px", color: "limegreen" }}
+              style={{
+                fontSize: "1em",
+                paddingLeft: "5px",
+                color: "limegreen",
+              }}
             />
           </h2>
-          <div
-            className="flex justify-between pt-10 max-w-[200px] w-full"
-          >
+          <div className="flex justify-between pt-10 max-w-[200px] w-full">
             <a
               href="https://twitter.com/crodz13"
               target="_blank"
